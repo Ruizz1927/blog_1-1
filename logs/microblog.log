@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-07-17 15:56:01,951 INFO: Microblog startup [in C:\Users\REDP\Desktop\blogpqnohagonada\blog_1\app\__init__.py:43]
 2025-07-17 15:57:20,060 INFO: Microblog startup [in C:\Users\REDP\Desktop\blogpqnohagonada\blog_1\app\__init__.py:43]
 2025-07-17 15:57:50,944 INFO: Microblog startup [in C:\Users\REDP\Desktop\blogpqnohagonada\blog_1\app\__init__.py:43]
@@ -8,3 +9,51 @@
 2025-07-24 15:50:16,260 INFO: Microblog startup [in C:\Users\REDP\Documents\blogpqnohagonada\blog_1\app\__init__.py:43]
 2025-07-29 16:55:09,576 INFO: Microblog startup [in C:\Users\REDP\Documents\blogpqnohagonada\blog_1\app\__init__.py:43]
 2025-07-29 17:18:02,285 INFO: Microblog startup [in C:\Users\REDP\Documents\blogpqnohagonada\blog_1\app\__init__.py:43]
+=======
+2025-07-17 15:48:21,597 ERROR: Exception on /register [POST] [in C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py:875]
+Traceback (most recent call last):
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\wtforms\validators.py", line 401, in __call__
+    import email_validator
+ModuleNotFoundError: No module named 'email_validator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ESTUDIANTE\Desktop\blogporquenohagonada\blog_1\app\routes.py", line 55, in register
+    if form.validate_on_submit():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_wtf\form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\wtforms\form.py", line 330, in validate
+    return super().validate(extra)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\wtforms\form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\wtforms\fields\core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\wtforms\fields\core.py", line 254, in _run_validation_chain
+    validator(form, self)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\ESTUDIANTE\AppData\Local\Programs\Python\Python313\Lib\site-packages\wtforms\validators.py", line 403, in __call__
+    raise Exception(
+        "Install 'email_validator' for email validation support."
+    ) from exc
+Exception: Install 'email_validator' for email validation support.
+2025-07-17 15:49:51,572 INFO: Microblog startup [in C:\Users\ESTUDIANTE\Desktop\blogporquenohagonada\blog_1\app\__init__.py:43]
+2025-07-24 14:52:14,645 INFO: Microblog startup [in C:\Users\ESTUDIANTE\Desktop\blogporquenohagonada\blog_1\app\__init__.py:43]
+2025-07-24 14:56:59,566 INFO: Microblog startup [in C:\Users\ESTUDIANTE\Desktop\blogporquenohagonada\blog_1\app\__init__.py:43]
+2025-07-24 15:05:16,465 INFO: Microblog startup [in C:\Users\ESTUDIANTE\Desktop\blogporquenohagonada\blog_1\app\__init__.py:43]
+2025-07-24 15:51:12,013 INFO: Microblog startup [in C:\Users\ESTUDIANTE\Desktop\blogporquenohagonada\blog_1\app\__init__.py:43]
+>>>>>>> 61a42826af467f946fefd7b703bfabaebf4bf721
+2025-07-31 14:43:21,559 INFO: Microblog startup [in C:\Users\REDP\Documents\blogpqnohagonada\blog_1\app\__init__.py:43]
